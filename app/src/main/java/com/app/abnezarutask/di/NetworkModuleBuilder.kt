@@ -7,7 +7,7 @@ import org.koin.dsl.module
 
 val networkModule = module {
 
-    single { NetworkAdapterProvider.provideHttpClient(androidContext()) }
+    single { NetworkAdapterProvider.provideHttpClient() }
     single {
         val baseUrl = androidContext().getString(R.string.BASE_URL)
         NetworkAdapterProvider.provideRetrofit(get(), baseUrl)

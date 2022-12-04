@@ -9,7 +9,6 @@ import com.app.abnezarutask.basic.BaseActivity
 import com.app.abnezarutask.databinding.ActivityMainBinding
 import com.app.abnezarutask.generic.GenericRecycleViewAdapter
 import com.app.abnezarutask.utils.isInternetAvailable
-import com.app.abnezarutask.utils.showLongToast
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -46,7 +45,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>() {
             GenericRecycleViewAdapter.OnListItemViewClickListener {
             override fun onClick(view: View, position: Int) {
                 mViewModel.saveAcceptOrDeclineStatusLocal(position, view.id == R.id.btAccept)
-                var item =
+                val item =
                     recyclerAdapter.getItemByPosition(position) as com.app.abnezarutask.models.Result
                 item.isAccepted = if (view.id == R.id.btAccept) 1 else 2
                 recyclerAdapter.onItemUpdated(item, position)
