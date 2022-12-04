@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AbnezaruTask</string>
+    <string name="unknown_exception">Something went wrong, please try again.</string>
+    <string name="no_network_message">Make sure you have active Internet Connection.</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="age">Age :</string>
+    <string name="gender">Gender :</string>
+    <string name="address">Address :</string>
+    <string name="nationality">Nationality :</string>
+    <string name="email_id">Email ID :</string>
+    <string name="mobile_number">Mobile Number :</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="accepted">Accepted</string>
+    <string name="declined">Declined</string>
+</resources>
